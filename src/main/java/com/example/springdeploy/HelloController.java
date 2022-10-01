@@ -10,12 +10,12 @@ public class HelloController {
     @Value("${app.message}")
     String message;
 
-    @Value("${app.pythonpath}")
-    String pythonPath;
+    //@Value("${app.pythonpath}")
+    //String pythonPath;
 
     @GetMapping("/hello")
     public String hello() {
-        return message + " " + pythonPath;
+        return "Hello from Spring deployment";
     }
 
     @GetMapping("/bootstrap")
